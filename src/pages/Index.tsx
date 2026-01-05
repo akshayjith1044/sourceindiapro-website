@@ -15,21 +15,13 @@ import {
 } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import InquiryForm from "@/components/InquiryForm";
-import heroBg from "@/assets/hero-bg.jpg";
-
 const whatsappUrl = "https://wa.me/917012089560?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20products.";
 
 const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-hero opacity-90" />
-        </div>
+      <section className="relative min-h-[90vh] flex items-center bg-gradient-hero">
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-3xl animate-fade-in-up">
