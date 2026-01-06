@@ -3,7 +3,7 @@ import InquiryForm from "@/components/InquiryForm";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, MessageCircle, Building } from "lucide-react";
 
-const whatsappUrl = "https://wa.me/917012089560?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20products.";
+const whatsappUrl = "https://wa.me/917012089560?text=Hello%2C%20I%20would%20like%20to%20discuss%20sourcing%20requirements%20with%20Mountwyn.";
 
 const Contact = () => {
   return (
@@ -13,10 +13,10 @@ const Contact = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-              Get in Touch
+              Business Inquiries
             </h1>
             <p className="text-lg text-primary-foreground/80 leading-relaxed">
-              For product inquiries or sourcing requirements, contact us using the details below.
+              For sourcing requirements, bulk orders, and B2B supply inquiries. We respond to serious business inquiries within 24–48 hours.
             </p>
           </div>
         </div>
@@ -40,6 +40,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Company</h3>
                     <p className="text-muted-foreground">Mountwyn Private Limited</p>
+                    <p className="text-sm text-muted-foreground">India-based Export Trading & Sourcing Company</p>
                   </div>
                 </div>
 
@@ -49,7 +50,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Location</h3>
-                    <p className="text-muted-foreground">Wayanad, Kerala, India</p>
+                    <p className="text-muted-foreground">Kerala, India</p>
                   </div>
                 </div>
 
@@ -67,18 +68,55 @@ const Contact = () => {
               <Button variant="whatsapp" size="lg" asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
-                  Chat on WhatsApp
+                  Start WhatsApp Conversation
                 </a>
               </Button>
+
+              {/* Inquiry Note */}
+              <div className="mt-10 bg-gradient-subtle rounded-xl p-6 border border-border">
+                <h3 className="font-semibold text-foreground mb-3">Before You Reach Out</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  This contact form is intended for business, bulk, and sourcing inquiries from international buyers. To help us respond effectively, please include:
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
+                    Product category and specifications you are looking for
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
+                    Approximate order quantities
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
+                    Destination country and preferred trade terms
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
+                    Timeline expectations
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Inquiry Form */}
             <div className="bg-card rounded-2xl p-6 lg:p-10 shadow-lg border border-border">
               <h2 className="text-2xl font-bold text-foreground mb-6">
-                Send an Inquiry
+                Submit Business Inquiry
               </h2>
               <InquiryForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Response Note */}
+      <section className="py-12 bg-gradient-subtle">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto">
+            <p className="text-muted-foreground">
+              We review all inquiries and respond to qualified business requests within 24–48 hours. For urgent requirements, please reach out via WhatsApp.
+            </p>
           </div>
         </div>
       </section>
