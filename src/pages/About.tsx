@@ -12,7 +12,7 @@ const About = () => {
               About Mountwyn
             </h1>
             <p className="text-lg text-primary-foreground/80 leading-relaxed">
-              An India-based export-focused trading and sourcing company serving international B2B buyers
+              An India-based B2B export and sourcing company
             </p>
           </div>
         </div>
@@ -31,25 +31,25 @@ const About = () => {
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Mountwyn is an export-focused trading and sourcing company based in India. We work with international buyers — importers, distributors, hospital groups, and B2B wholesalers — who require reliable supply of healthcare apparel, uniforms, and custom textile products.
+                  Mountwyn is an export-focused sourcing company based in India. We work with international buyers who need a single, accountable partner to manage product sourcing, quality control, and export coordination.
                 </p>
                 <p>
-                  We do not operate our own manufacturing facility. Instead, we coordinate with a network of verified manufacturing partners, managing the sourcing process from product development through quality checks to final export shipment.
+                  We are not a manufacturer. We coordinate with verified production partners, taking responsibility for supplier selection, quality oversight, and shipment — so buyers deal with one point of contact instead of multiple vendors.
                 </p>
                 <p>
-                  Our role is to serve as a single, accountable point of contact — handling supplier coordination, production oversight, quality control, and export logistics — so that buyers can work with one trusted partner rather than managing multiple vendors directly.
+                  Our current focus is healthcare apparel and uniforms, with the flexibility to source additional product categories based on buyer requirements.
                 </p>
               </div>
             </div>
             <div className="bg-gradient-subtle rounded-xl p-8 border border-border">
-              <h3 className="text-xl font-semibold text-foreground mb-6">How We Work</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-6">What We Do</h3>
               <ul className="space-y-4">
                 {[
-                  "Identify and vet manufacturing partners based on buyer requirements",
-                  "Coordinate sampling, pricing, and production timelines",
+                  "Identify and vet manufacturing partners",
+                  "Manage sampling, pricing, and timelines",
                   "Conduct quality checks at production and pre-dispatch stages",
-                  "Manage export documentation and freight forwarder coordination",
-                  "Maintain clear communication throughout the order cycle",
+                  "Prepare export documentation",
+                  "Coordinate logistics to port of shipment",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <span className="h-6 w-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -69,11 +69,8 @@ const About = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              What We Stand For
+              How We Work
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our approach is built on accountability, transparency, and long-term partnership rather than transactional dealings.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -83,7 +80,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Accountability</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                We take ownership of the sourcing process. When issues arise, we address them directly rather than passing responsibility to suppliers.
+                We own the process. When issues arise, we address them — not pass them to suppliers.
               </p>
             </div>
 
@@ -91,9 +88,9 @@ const About = () => {
               <div className="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-7 h-7 text-gold" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Long-Term Partnership</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Long-Term Focus</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                We prioritize repeat business and ongoing relationships over one-time transactions. Our success depends on buyer satisfaction over time.
+                We build for repeat business. Relationships matter more than one-time transactions.
               </p>
             </div>
 
@@ -103,7 +100,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Transparency</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                We communicate clearly about timelines, pricing, and any production challenges. Buyers receive honest updates, not optimistic projections.
+                Honest timelines, clear pricing, upfront communication about challenges.
               </p>
             </div>
           </div>
@@ -116,13 +113,10 @@ const About = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center">
               <h3 className="text-xl font-semibold text-foreground mb-4">
-                Our Position
+                Clear Positioning
               </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Mountwyn is not a manufacturer, and we do not position ourselves as one. We are a sourcing and trading company that adds value through supplier verification, quality oversight, and export coordination.
-              </p>
               <p className="text-muted-foreground leading-relaxed">
-                For buyers who need a dependable partner to manage India-based sourcing — with clear accountability and consistent communication — Mountwyn offers a practical, low-risk approach to international procurement.
+                We don't claim to be a factory. We're a sourcing and trading company that adds value through supplier verification, quality oversight, and reliable coordination. For buyers who want a dependable partner — not just a supplier list — Mountwyn provides a practical, low-risk approach to sourcing from India.
               </p>
             </div>
           </div>

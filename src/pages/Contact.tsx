@@ -13,10 +13,10 @@ const Contact = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-              Business Inquiries
+              Start a Conversation
             </h1>
             <p className="text-lg text-primary-foreground/80 leading-relaxed">
-              For sourcing requirements, bulk orders, and B2B supply inquiries. We respond to serious business inquiries within 24–48 hours.
+              For sourcing discussions, bulk orders, and B2B supply inquiries
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Company</h3>
                     <p className="text-muted-foreground">Mountwyn Private Limited</p>
-                    <p className="text-sm text-muted-foreground">India-based Export Trading & Sourcing Company</p>
+                    <p className="text-sm text-muted-foreground">B2B Export & Sourcing</p>
                   </div>
                 </div>
 
@@ -68,32 +68,32 @@ const Contact = () => {
               <Button variant="whatsapp" size="lg" asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
-                  Start WhatsApp Conversation
+                  Message on WhatsApp
                 </a>
               </Button>
 
-              {/* Inquiry Note */}
+              {/* What to Include */}
               <div className="mt-10 bg-gradient-subtle rounded-xl p-6 border border-border">
-                <h3 className="font-semibold text-foreground mb-3">Before You Reach Out</h3>
+                <h3 className="font-semibold text-foreground mb-3">What to Include in Your Inquiry</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  This contact form is intended for business, bulk, and sourcing inquiries from international buyers. To help us respond effectively, please include:
+                  Help us respond faster by sharing:
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-2">
                   <li className="flex items-start gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
-                    Product category and specifications you are looking for
+                    Product type and specifications
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
-                    Approximate order quantities
+                    Estimated order quantities
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
-                    Destination country and preferred trade terms
+                    Destination country
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
-                    Timeline expectations
+                    Timeline or urgency
                   </li>
                 </ul>
               </div>
@@ -102,7 +102,7 @@ const Contact = () => {
             {/* Inquiry Form */}
             <div className="bg-card rounded-2xl p-6 lg:p-10 shadow-lg border border-border">
               <h2 className="text-2xl font-bold text-foreground mb-6">
-                Submit Business Inquiry
+                Submit Inquiry
               </h2>
               <InquiryForm />
             </div>
@@ -115,7 +115,7 @@ const Contact = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-2xl mx-auto">
             <p className="text-muted-foreground">
-              We review all inquiries and respond to qualified business requests within 24–48 hours. For urgent requirements, please reach out via WhatsApp.
+              We respond to business inquiries within 24–48 hours. For urgent requirements, reach out via WhatsApp.
             </p>
           </div>
         </div>
