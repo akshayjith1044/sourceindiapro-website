@@ -27,10 +27,10 @@ const Index = () => {
               B2B Export & Sourcing from India
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-              Your Sourcing Partner for Healthcare Apparel & Uniforms
+              B2B Export & Sourcing Partner from India
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 leading-relaxed">
-              Healthcare apparel, uniforms, and OEM/ODM textile products. Single-point accountability for sourcing, quality, and export — through verified Indian manufacturers.
+              Supplying healthcare apparel and uniforms through verified manufacturing partners, with flexible sourcing support for customized B2B requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" asChild>
