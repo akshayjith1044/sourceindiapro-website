@@ -14,7 +14,7 @@ import {
 import Layout from "@/components/layout/Layout";
 import InquiryForm from "@/components/InquiryForm";
 
-const whatsappUrl = "https://wa.me/917012089560?text=Hello%2C%20I%20would%20like%20to%20discuss%20sourcing%20requirements%20with%20Mountwyn.";
+const whatsappUrl = "https://wa.me/916366933962?text=Hello%2C%20I%20would%20like%20to%20discuss%20sourcing%20requirements%20with%20Mountwyn.";
 
 const Index = () => {
   return (
