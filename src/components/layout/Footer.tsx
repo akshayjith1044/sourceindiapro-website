@@ -26,6 +26,12 @@ const Footer = () => {
                 <Phone className="w-4 h-4 text-gold" />
                 <span className="text-primary-foreground/80">+91 6366933962</span>
               </div>
+              <div className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-gold" />
+                <a href="mailto:sales@mountwyn.com" className="text-primary-foreground/80 hover:text-gold transition-colors">
+                  sales@mountwyn.com
+                </a>
+              </div>
             </div>
           </div>
 

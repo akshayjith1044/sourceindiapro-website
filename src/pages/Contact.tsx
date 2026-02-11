@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import InquiryForm from "@/components/InquiryForm";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, MessageCircle, Building } from "lucide-react";
+import { MapPin, Phone, MessageCircle, Building, Mail } from "lucide-react";
 
 const whatsappUrl = "https://wa.me/916366933962?text=Hello%2C%20I%20would%20like%20to%20discuss%20sourcing%20requirements%20with%20Mountwyn.";
 
@@ -61,6 +61,18 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">WhatsApp</h3>
                     <p className="text-muted-foreground">+91 6366933962</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-gold" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                    <a href="mailto:sales@mountwyn.com" className="text-muted-foreground hover:text-gold transition-colors">
+                      sales@mountwyn.com
+                    </a>
                   </div>
                 </div>
               </div>
