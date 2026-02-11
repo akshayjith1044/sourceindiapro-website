@@ -3,7 +3,7 @@ import InquiryForm from "@/components/InquiryForm";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, MessageCircle, Building } from "lucide-react";
 
-const whatsappUrl = "https://wa.me/917012089560?text=Hello%2C%20I%20would%20like%20to%20discuss%20sourcing%20requirements%20with%20Mountwyn.";
+const whatsappUrl = "https://wa.me/916366933962?text=Hello%2C%20I%20would%20like%20to%20discuss%20sourcing%20requirements%20with%20Mountwyn.";
 
 const Contact = () => {
   return (
@@ -60,7 +60,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">WhatsApp</h3>
-                    <p className="text-muted-foreground">+91 7012089560</p>
+                    <p className="text-muted-foreground">+91 6366933962</p>
                   </div>
                 </div>
               </div>

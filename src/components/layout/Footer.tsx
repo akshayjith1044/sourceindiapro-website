@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-gold" />
-                <span className="text-primary-foreground/80">+91 7012089560</span>
+                <span className="text-primary-foreground/80">+91 6366933962</span>
               </div>
             </div>
           </div>
