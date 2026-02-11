@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import { Shield, Users, Eye, Building2, CheckCircle } from "lucide-react";
+import directorPhoto from "@/assets/director-akshayjith.jpeg";
 
 const About = () => {
   return (
@@ -101,6 +102,29 @@ const About = () => {
               <h3 className="text-xl font-semibold text-foreground mb-3">Transparency</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Honest timelines, clear pricing, upfront communication about challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Director */}
+      <section className="py-16 lg:py-24 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-10">
+              Leadership
+            </h2>
+            <div className="flex flex-col items-center">
+              <img
+                src={directorPhoto}
+                alt="Akshayjith – Director, Mountwyn Private Limited"
+                className="w-40 h-40 rounded-full object-cover object-top border-4 border-gold/30 shadow-lg mb-6"
+              />
+              <h3 className="text-xl font-semibold text-foreground">Akshayjith</h3>
+              <p className="text-gold font-medium mb-3">Director</p>
+              <p className="text-muted-foreground text-sm leading-relaxed max-w-lg">
+                Leading Mountwyn's sourcing operations, supplier partnerships, and export coordination to deliver reliable, quality-driven outcomes for international buyers.
               </p>
             </div>
           </div>
