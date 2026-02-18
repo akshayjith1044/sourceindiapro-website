@@ -7,7 +7,6 @@ import { Send } from "lucide-react";
 
 const InquiryForm = () => {
   const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,26 +15,22 @@ const InquiryForm = () => {
     message: "",
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const subject = encodeURIComponent(
+      `Inquiry from ${formData.name}${formData.company ? ` - ${formData.company}` : ""}`
+    );
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || "N/A"}\nCountry: ${formData.country}\n\nMessage:\n${formData.message}`
+    );
+
+    window.open(`mailto:sales@mountwyn.com?subject=${subject}&body=${body}`, "_self");
 
     toast({
-      title: "Inquiry Sent!",
-      description: "Thank you for your inquiry. Our team will respond within 24-48 hours.",
+      title: "Opening Email Client",
+      description: "Your default email app will open with the inquiry details pre-filled.",
     });
-
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      country: "",
-      message: "",
-    });
-    setIsSubmitting(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -102,15 +97,9 @@ const InquiryForm = () => {
           className="bg-background resize-none"
         />
       </div>
-      <Button type="submit" variant="gold" size="lg" className="w-full" disabled={isSubmitting}>
-        {isSubmitting ? (
-          "Sending..."
-        ) : (
-          <>
-            <Send className="w-4 h-4" />
-            Send Inquiry
-          </>
-        )}
+      <Button type="submit" variant="gold" size="lg" className="w-full">
+        <Send className="w-4 h-4" />
+        Send Inquiry
       </Button>
     </form>
   );
